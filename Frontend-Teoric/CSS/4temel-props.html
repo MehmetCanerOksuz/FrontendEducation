@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temel CSS Property</title>
+    <style>
+      .hsl {
+        background-color: hsl(160, 100%, 75%);
+        width: 200px;
+        height: 200px;
+        transition: 0.8s all ease-in;
+      }
+
+      /* üstüne gelince değicek */
+      .hsl:hover {
+        background-color: hsl(160, 100%, 25%);
+      }
+      .hexcode {
+        background-color: #ff69b4;
+        width: 200px;
+        height: 200px;
+        transition: 0.8sn all cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .hexcode:hover {
+        background-color: #df348a;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="color: rgb(255, 15, 0)">Lorem ipsum</div>
+    <!-- rgba de a 0 ile 1 arasında bir değer alabilir. -->
+    <div style="color: rgba(255, 0, 0, 0.5)">Lorem ipsum</div>
+    <div style="color: red">Lorem ipsum</div>
+    <div class="hexcode">hexcode</div>
+    <div class="hsl">hsl</div>
+  </body>
+</html>
